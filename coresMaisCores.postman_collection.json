@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "0315f35b-51b4-4007-8a55-400be9703e0b",
+		"name": "Cores e mais cores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "converter RGB para Hexadecimal",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rgbToHex?red=255&green=255&blue=0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rgbToHex"
+					],
+					"query": [
+						{
+							"key": "red",
+							"value": "255"
+						},
+						{
+							"key": "green",
+							"value": "255"
+						},
+						{
+							"key": "blue",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "converter RGB para Hexadecimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "red",
+							"value": "255",
+							"type": "text"
+						},
+						{
+							"key": "green",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "blue",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/rgbToHex",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rgbToHex"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "converter hexadecimal para RGB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hextoRgb?hex=ff0000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hextoRgb"
+					],
+					"query": [
+						{
+							"key": "hex",
+							"value": "ff0000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "converter hexadecimal para RGB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "hex",
+							"value": "#ffffff",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/hextoRgb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hextoRgb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
